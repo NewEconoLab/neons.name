@@ -1,0 +1,21 @@
+
+<svg width="297px" height="290px" viewBox="0 0 297 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1083FF" offset="0%"></stop>
+            <stop stop-color="#0462D3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-541.000000, -454.000000)">
+            <g id="Group" transform="translate(538.000000, 454.000000)">
+                <path d="M145.5,178 C94.9659454,178 54,138.153343 54,89 C54,39.8466573 94.9659454,0 145.5,0 C196.034055,0 237,39.8466573 237,89 C237,138.153343 196.034055,178 145.5,178 Z M145,145 C173.718807,145 197,120.151804 197,89.5 C197,58.8481964 173.718807,34 145,34 C116.281193,34 93,58.8481964 93,89.5 C93,120.151804 116.281193,145 145,145 Z M226.271592,153.17869 L255.91961,153.17869 L255.91961,160.961133 L246.328545,171.442621 C254.3289,173.261011 258.329078,178.251688 258.329078,186.414654 C258.329078,198.659102 240.856633,209.401628 223.557326,196.200927 C224.507364,195.033738 226.057231,192.394055 228.206929,188.281877 C240.288006,194.798956 246.857597,194.176548 247.915703,186.414654 C247.915703,177.716831 234.099317,179.968986 232.273191,181.241833 C232.273191,180.451361 232.273191,177.739125 232.273191,173.105124 L240.943202,162.417392 L226.271592,162.417392 L226.271592,153.17869 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                <text id="O3-Labs" font-family="NotoSansHans-Medium, Noto Sans S Chinese" font-size="64" font-weight="400" letter-spacing="10" fill="#0667D9">
+                    <tspan x="0" y="289">O3 Labs</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,225 +1,425 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NEO Name Service</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!--<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-    <link href="css/styles.css?v=1.6" rel="stylesheet">
-    <link href="css/queries.css?v=1.6" rel="stylesheet">
-    <link href="css/jquery.fancybox.css" rel="stylesheet">
-    <!-- Fonts -->
-    <!--<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>-->
-      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    </head>
-    <body>
-      <section class="navigation">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-              <nav class="pull">
-                <ul class="top-nav">
-                  <li><a href="#getstarted">Get Started <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                  <li><a href="#media">Media <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                  <li><a href="#features">Features <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                  <li class="nav-last"><a href="#design">Design <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NNS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="img-responsive center-block" src="img/png/logo.png"/></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#nns">NNS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#usecase">使用场景</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#point">特点</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#knowmore">了解更多</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">团队</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#institutionalinvestor">合作伙伴</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#tel">联系方式</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index_En.html"><img class="img-fluid" src="img/png/en.png"/></a>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section class="hero" id="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-right">
-              <a href="#"><i class="fa fa-navicon fa-2x nav_slide_button"></i></a>
-            </div>
-          </div>
-          <div class="row">
-              <div class="col-md-8 col-md-offset-2 text-center">
-                  <h1 class="animated bounceInDown">NEO Name Service</h1>
-                  <p class="animated fadeInUpDelay">Distributed domain name service ending with .neo based on NEO blockchain</p>
-                  <h1 class="animated fadeInUpDelay">Coming Soon</h1>
-              </div>
-          </div>
-<!--          <div class="row">
-              <div class="col-md-2 col-md-offset-5 text-center">
-                  <a class="hero-play-btn various fancybox.iframe">Play Button</a>
-                  <a href="http://player.vimeo.com/video/87701971?title=0&amp;byline=0&amp;portrait=0&amp;color=1883ad&amp;autoplay=1" class="hero-play-btn various fancybox.iframe">Play Button</a>
-              </div>
-          </div>-->
-           <div style="height:0px;padding-bottom:35%">&nbsp;</div>
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center">
-              <a href="https://github.com/NewEconoLab/neo-ns" class="get-started-btn">Github</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--<section class="download-now" id="getstarted">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 wp1">
-              <h1>
-              See the sky even better than your own eyes can
-              </h1>
-              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>Auae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-              <a href="#" class="download-btn">Download Now</a>
-            </div>
-          </div>
-        </div>
-      </section>-->
-      <!--<section class="testimonials" id="media">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <div id="firstSlider">
-                <ul class="slides">
-                  <li>
-                    <div class="avatar"><img src="img/av-blaz.png" alt="Blaz Robar"></div>
-                    <h1>I couldnt possibly use my own eyes to look at the stars, thansk Starnught App.</h1>
-                  </li>
-                  <li>
-                    <div class="avatar"><img src="img/av-pete.png" alt="Pete Finlan"></div>
-                    <h1>Staring at the stars has given me feels like never before.</h1>
-                  </li>
-                  <li>
-                    <div class="avatar"><img src="img/av-doge.png" alt="Doge Finbar"></div>
-                    <h1>Much flat, many design, so app. Wow.</h1>
-                  </li>
-                </ul>
+      </div>
+    </nav>
+
+    <header id="nns" class="masthead text-center text-dark d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <div class="container-fluid">
+              <div class="row-fluid">
+              		<div class="span2">
+                    <h1 class="text-left">NNS</h1>
+                    <p></p>
+                    <h3 class="text-left">基于NEO区块链平台的以</h2>
+                    <h3 class="text-left">".neo" 结尾的去中心化域名服务</h2>
+              		</div>
+              		<div class="span10">
+
+              		</div>
+              	</div>
+              	<div class="row-fluid">
+              		<div class="span12">
+                    <img class="img-fluid" src="img/png/index_01.png"/>
+
+              		</div>
+              	</div>
               </div>
             </div>
           </div>
         </div>
-      </section>-->
-      <!--<section class="features" id="features">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 features-leftcol wp2">
-              <h1>So Dreamy</h1>
-              <p class="margin-bottom">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <h1>Apple Store</h1>
-              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="col-md-6 features-rightcol wp3">
-              <h1>More Buzz Words</h1>
-              <p class="margin-bottom">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <h1>Extra Startup Juice</h1>
-              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+     </header>
+
+    <section class="bg-danger text-white" id="usecase">
+      <div class="container">
+
+          <div class="col-lg-12 mx-auto text-center" style="padding-bottom:50px;">
+            <h2 class="section-heading text-white">使用场景</h2>
           </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <a href="#" class="try-btn">Try Demo</a>
-            </div>
-          </div>
-        </div>
-      </section>-->
-      <!--<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >手机网站模板</a></div>
-      <section class="design" id="design">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div id="secondSlider">
-                <ul class="slides">
-                  <li>
-                    <div class="col-md-4">
-                      <div class="flat-box">
-                        <div class="colourway colour1"></div>
-                        <p class="title">Extra Startup Juice</p>
-                        <p class="feature-text">Added Feature</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="flat-box">
-                        <div class="colourway colour2"></div>
-                        <p class="title">So Thirsty</p>
-                        <p class="feature-text">Extra nice UI comes with the app</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4 design-content">
-                      <h1>So flat you'll want to give it some shadows</h1>
-                      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-4">
-                      <div class="flat-box">
-                        <div class="colourway colour3"></div>
-                        <p class="title">Extra Startup Juice</p>
-                        <p class="feature-text">Added Feature</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="flat-box">
-                        <div class="colourway colour4"></div>
-                        <p class="title">So Thirsty</p>
-                        <p class="feature-text">Extra nice UI comes with the app</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4 design-content">
-                      <h1>So flat you'll want to give it some shadows</h1>
-                      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </div>
-                  </li>
-                </ul>
+          <p></p>
+            <div class="row">
+              <div class="col-lg-1 text-center">
               </div>
-              <div class="col-md-1 col-md-offset-11 text-right controls">
-                <a href="prev" class="prev"><i class="fa fa-angle-left fa-3x"></i></a>
-                <a href="next" class="next"><i class="fa fa-angle-right fa-3x"></i></a>
+          <div class="col-lg-5 text-center">
+          <img class="img-fluid" src="img/png/usage_01.png"/>
+          </div>
+          <div class="col-lg-1 text-center">
+
+          </div>
+          <div class="col-lg-5 text-center">
+
+<ul class="list-unstyled">
+				<li class="text-left">
+				  <img class="img-fluid" src="img/png/usage_02.png"/><span>别名转账</span>
+				</li>
+				<li class="text-left">
+					  <img class="img-fluid" src="img/png/usage_03.png"/><span>邮件、消息通信地址</span>
+				</li>
+				<li class="text-left">
+					  <img class="img-fluid" src="img/png/usage_04.png"/><span>宠物名</span>
+				</li>
+				<li class="text-left">
+					  <img class="img-fluid" src="img/png/usage_05.png"/><span>智能合约哈希</span>
+				</li>
+				<li class="text-left">
+				  <img class="img-fluid" src="img/png/usage_06.png"/><span>子域名</span>
+				</li>
+				<li class="text-left">
+					<img class="img-fluid" src="img/png/usage_07.png"/><span>公钥别名</span>
+				</li>
+				<li class="text-left">
+            <img class="img-fluid" src="img/png/usage_08.png"/><span>文件名</span>
+				</li>
+
+			</ul>
+    </div>
+
+        <div class="col-lg-12 mx-auto text-center">
+          <p class="text-center">NNS可以将长的、无规则的、人类难以记忆的字符串用单词短语代替，例如，可以将token转给一 个NNS域名而不是一个区块链地址。NNS是可扩展的，域名可以映射到任意的区块链标识符或资源， 例如合约哈希、内容哈希、公钥等。</p>
+        </div>
+      </div>
+    </section>
+      <section id="point">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">NNS特点</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+            <img class="img-fluid" src="img/png/feature_01.png"/>
+              <h3 class="mb-3">基于NEO平台</h3>
+              <p class="text-muted mb-0">NNS是NEO平台的纯智能合约服务体系，旨在提升NEO易用性。</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+            <img class="img-fluid" src="img/png/feature_02.png"/>
+              <h3 class="mb-3">去中心化</h3>
+              <p class="text-muted mb-0">NNS的管理和服务都通过智能合约完成，完全去中心化，安全性和可信度非常高。</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+            <img class="img-fluid" src="img/png/feature_03.png"/>
+              <h3 class="mb-3">系统费用重新分配</h3>
+              <p class="text-muted mb-0">NNS系统的流通奖牌NNC内置了领奖池，所有的系统费用会进入奖池，并按比例分配给NNC的持有人，领奖只需要发送一笔特定交易，无需锁定奖牌</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white" id="knowmore">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">了解更多NNS</h2>
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-6  text-center">
+          <div class="service-box mt-5 mx-auto">
+              <div class="row">
+            <a class="portfolio-box" href="./download/NNS%20白皮书%20(中文).pdf">
+              <img class="img-fluid" src="img/png/more_01.png"/>
+            <span>白皮书</span>
+            </a>
+
+        </div>
+          </div>
+        </div>
+        <div class="col-lg-6  text-center">
+          <div class="service-box mt-5 mx-auto">
+            <div class="row">
+            <a class="portfolio-box" href="https://github.com/NewEconoLab/neo-ns">
+              <img class="img-fluid" src="img/png/more_02.png"/>
+                <span>GitHub</span>
+           </a>
+
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+
+  </section>
+
+
+  <section class="bg-white text-dark" id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">NNS团队</h2>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+        <img class="img-fluid" src="img/png/team_01.png"/>
+        <p></p>
+
+          <h4 class="mb-3">刘永新 创始人</h4>
+          <p class="text-muted mb-0">NEO中国开发志愿者社区NEL联合发起人</p>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-6 text-center">
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+        <img class="img-fluid" src="img/png/team_02.png"/>
+<p></p>
+          <h4 class="mb-3">李剑英 联合创始人/CTO</h4>
+          <p class="text-muted mb-0">NEO核心开发者，NEL联合发起人</p>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-6 text-center">
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+        <img class="img-fluid" src="img/png/team_03.png"/>
+<p></p>
+          <h4 class="mb-3">刘虔铭</h4>
+          <p class="text-muted mb-0">核心开发者，全栈工程师</p>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-6 text-center">
+      </div>
+
+
+
+
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+        <img class="img-fluid" src="img/png/team_04.png"/>
+<p></p>
+          <h4 class="mb-3">赵奔</h4>
+          <p class="text-muted mb-0">web开发工程师</p>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-6 text-center">
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+        <img class="img-fluid" src="img/png/team_05.png"/>
+          <p></p>
+          <h4 class="mb-3">王祥剑</h4>
+          <p class="text-muted mb-0">海外社区运营经理</p>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-6 text-center">
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="service-box mt-5 mx-auto">
+        <img class="img-fluid" src="img/png/team_06.png"/>
+<p></p>
+          <h4 class="mb-3">王佳平</h4>
+          <p class="text-muted mb-0">UI设计师</p>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-6 text-center">
+      </div>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+  </section>
+
+
+  <section id="roadmap" class="bg-danger text-white">
+
+    <div class="container text-center">
+      <div class="row">
+          <div class="col-lg-4  text-center">
+      <h2 style="padding-bottom:50px;">路线图</h2>
+      <img class="img-fluid" src="img/png/roadmap_01.png"/>
+     </div>
+    <div class="col-lg-7  text-center">
+
+      <h5 class="text-left">2018年第1季度———————————————————————</h5>
+      <ul>
+<li class="text-left">2018.1正式发布NNS技术白皮书</p>
+<li class="text-left">2018.1完成技术原理测试和验证</p>
+<li class="text-left">2018.1.31在测试网发布包括注册器，解析器的NNS第一阶段测试服务，任何人可以注册未被注册且符合规则的域名</p>
+</ul>
+<h5 class="text-left">2018年第2季度———————————————————————</h5>
+<ul>
+<li class="text-left">2018.3 发布基于测试网的域名浏览器V1</p>
+<li class="text-left">2018.3 在测试网发行NNC</p>
+<li  class="text-left">2018.4 在测试网发布包含竞标服务的NNS第二阶段测试服务，任何人可以向NEL申
+请NNC进行竞标测试域名</p>
+<li  class="text-left">2018.5 发布基于测试网的域名浏览器V2</p>
+<li  class="text-left">2018.5 在主网发行NNC</p>
+</ul>
+<h5 class="text-left">2018年第3季度———————————————————————</h5>
+<ul>
+<li  class="text-left">2018.6 在主网上发布NNS合约，开放5个字符以上的.neo后缀域名，Neo域名时代 来临</p>
+<li  class="text-left">2018.6 发布基于正式网的域名浏览器</p>
+</ul>
+<h5 class="text-left">2018年第4季度———————————————————————</h5>
+<ul>
+<li  class="text-left">实现域名交易</p>
+</ul>
+<h5 class="text-left">2019年———————————————————————————</h5>
+<ul>
+<li  class="text-left">实现租金机制</p>
+<li  class="text-left">完全开放.neo后缀域名</p>
+</ul>
+    </div>
+    <div class="col-lg-1 ">
+    </div>
+  </div>
+  </section>
+
+
+    <section id="institutionalinvestor" class="bg-white text-black">
+
+      <div class="container text-center">
+        <h2 class="mb-4" style="padding-bottom:50px">合作伙伴</h2>
+        <div class="partners">
+            <img src="./img/png/neo_logo.svg" alt="" width="117.13" height="50" >
+        </div>
+        <div class="partners" style="padding-left:100px;padding-right:100px;">
+            <img src="./img/png/fenbushi_logo.png" alt="" width="112" height="56">
+        </div>
+        <div class="partners">
+            <img src="./img/png/O3-title.svg" alt="" width="56" width="56" >
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-dark text-white" id="tel">
+
+          <div class="row">
+            <div class="col-lg-1 text-center">
+
+            </div>
+
+          <div class="col-lg-1 text-center">
+            <img class="img-fluid" src="img/png/code.png"/>
+          </div>
+            <div class="col-lg-5 text-center">
+            <h2 class="text-left">联系方式</h2>
+              <p class="text-left">NNS QQ官方一群：702673768</p>
+            <p class="text-left">contact@neons.name</p>
+            <p class="text-left">公众号-NEL新经济实验室</p>
+            </div>
+
+            <div class="col-lg-5 text-center">
+                <div class="row">
+              <a class="portfolio-box" href="https://medium.com/neweconolab">
+                <img class="img-fluid" src="img/png/contact_01.png"/>
+              </a>
+              <a class="portfolio-box" href="https://twitter.com/NeoNameService">
+                <img class="img-fluid" src="img/png/contact_02.png"/>
+              </a>
+              <a class="portfolio-box" href="https://jq.qq.com/?_wv=1027&k=5SahDHr">
+                <img class="img-fluid" src="img/png/contact_03.png"/>
+              </a>
+                <a class="portfolio-box" href="https://t.me/joinchat/IESfVEkjE8iSVKfBnaOhTQ">
+                <img class="img-fluid" src="img/png/contact_05.png"/>
+              </a>
+                <a class="portfolio-box" href="https://github.com/NewEconoLab/neo-ns">
+                <img class="img-fluid" src="img/png/contact_06.png"/>
+              </a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>-->
-      <!--<footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <p>Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
-            </div>
-            <div class="col-md-3">
-              <p>aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq</p>
-            </div>
-            <div class="col-md-2 col-md-offset-3">
-              <ul class="footer-nav">
-                <li><a href="#">Get Started Tutorial</a></li>
-                <li><a href="#">Introduction Video</a></li>
-                <li><a href="#">See the Features</a></li>
-                <li><a href="#">Download a Trial</a></li>
-                <li><a href="#">Get in Touch!</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <a href="#" class="badge-btn">Badge Button</a>
-              <p class="footer-credit">More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-            </div>
-          </div>
-        </div>
-      </footer>-->
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <!--<script src="http://ajax.useso.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-      <script src="js/jquery.fancybox.pack.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/scripts.js?v=1.7"></script>
-      <script src="js/jquery.flexslider.js"></script>
-      <script src="js/jquery.smooth-scroll.js"></script>
-      <script src="js/modernizr.js"></script>
-      <script src="js/waypoints.min.js"></script>
-    </body>
-  </html>
+      </div>
+
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.js"></script>
+
+  </body>
+
+</html>
