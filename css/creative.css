@@ -218,6 +218,45 @@ header.masthead p {
 .service-box {
   max-width: 400px;
 }
+.box-warp{
+  height: 480px;
+  position: relative;
+}
+.contact-box{
+  width: 255px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.contact-box a{
+  margin-right: 30px;
+}
+.contact-box a:last-child{
+  margin-right: 0;
+}
+.contact-box .linkedin-warp{
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  background: url(../img/png/linkedin.png) no-repeat center;
+  background-size: cover;
+}
+.contact-box .linkedin-warp:hover{
+  background: url(../img/png/linkedin-hover.png) no-repeat center;
+  background-size: cover;
+}
+.contact-box .github-warp{
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  background: url(../img/png/github.png) no-repeat center;
+  background-size: cover;
+}
+.contact-box .github-warp:hover{
+  background: url(../img/png/github-hover.png) no-repeat center;
+  background-size: cover;
+}
 
 .portfolio-box {
   position: relative;
