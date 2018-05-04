@@ -219,7 +219,6 @@ header.masthead p {
   max-width: 400px;
 }
 .box-warp{
-  /* height: 520px; */
   position: relative;
 }
 .box-warp .h-name{   
@@ -227,8 +226,6 @@ header.masthead p {
 }
 .contact-box{
   width: 100%;
-  /* position: absolute;
-  bottom: 0; */
   text-align: center;
 }
 .box-warp .t-padding{
@@ -307,7 +304,7 @@ header.masthead p {
 }
 .partners{ 
   display:inline-block;
-  padding-right: 80px; 
+  padding: 40px; 
   padding-bottom: 20px; 
 }
 .partners:last-child{
