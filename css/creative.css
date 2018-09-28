@@ -171,7 +171,7 @@ body {
 }
 
 header.masthead {
-  padding-top: 10rem;
+  padding-top: 6rem;
   padding-bottom: calc(10rem - 56px);
   background-position: center center;
   -webkit-background-size: cover;
@@ -367,7 +367,7 @@ header.masthead p {
   text-align: left;
   background: url('../img/png/bg1.png') no-repeat;
   background-position:right;
-  background-size: 564px 440px;
+  background-size: contain;
   margin-bottom: 100px;
   padding-top: 70px;
 }
@@ -375,8 +375,9 @@ header.masthead p {
   margin-bottom: 40px;
 }
 .time-black span{
-  min-width: 450px;
+  display: inline-block;
   background: #333333;
+  border: 1px solid #333;
   border-radius: 10px;
   font-family: NotoSansHans-Medium;
   font-size: 22px;
