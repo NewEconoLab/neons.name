@@ -72,7 +72,7 @@ function countTime(){
   let date = new Date();
   let now = date.getTime();
   
-  let endDate = new Date("2018-10-09 10:00:00");
+  let endDate = new Date("2018/10/09 10:00:00");
   let end = endDate.getTime();
 
   let leftTime = end-now;
@@ -81,12 +81,10 @@ function countTime(){
   if(leftTime>=0){
     d = Math.floor(leftTime/1000/60/60/24);
     h = Math.floor(leftTime/1000/60/60%24);
-    s = Math.floor(leftTime/1000%60);
   }else{
     clearTimeout(countTime);
     return false;
   }
-  console.log(s)
   document.getElementById("_d").innerHTML = d;
   document.getElementById("_h").innerHTML = h;
   setTimeout(countTime,1000);
