@@ -90,7 +90,6 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #212529;
-  overflow: hidden;
 }
 
 #mainNav {
@@ -505,7 +504,6 @@ header.masthead p {
   .mobile-show{
     display: block;;
   }
-  
 }
 .mobile-time-wrapper{
   text-align: center;
