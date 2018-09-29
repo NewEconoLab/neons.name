@@ -499,10 +499,13 @@ header.masthead p {
 }
 @media(max-width: 992px){
   .pc-show{
-    display: none;;
+    display: none;
   }
   .mobile-show{
-    display: block;;
+    display: block;
+  }
+  header.masthead {
+    padding-top: 1rem;
   }
 }
 .mobile-time-wrapper{
@@ -510,7 +513,6 @@ header.masthead p {
   background: url('../img/png/bg2.png') no-repeat;
   background-position:right;
   background-size: contain;
-  /* margin-bottom: 100px; */
   padding-top: 40px;
 }
 .mobile-time-black{
@@ -520,8 +522,6 @@ header.masthead p {
   font-family: NotoSansHans-Medium;
   font-size: 18px;
   color: #333333;
-}
-.mobile-time-black .span-en{
 }
 .mobile-time-going{
   color: #fff;
@@ -537,14 +537,10 @@ header.masthead p {
   letter-spacing: 0;
   padding-bottom: 20px;
 }
-.mobile-time-msg .span-en{
-}
 .mobile-time-box{
   font-family: NotoSansHans-Medium;
   font-size: 64px;
   color: #FFFFFF;
-}
-.mobile-day-time{
 }
 .mobile-day-time, .mobile-hour-time{
   display: inline-block;
@@ -587,26 +583,15 @@ header.masthead p {
   margin-right: 25px;
 }
 .mobile-white-link{
-  /* padding: 9px 25px; */
   border: 1px solid #D0121B;
   color: #D0121B;
 }
-/* .mobile-time-tip{
-  font-family: NotoSansHans-Regular;
-  font-size: 12px;
-  color: #333333;
-  line-height: 18px;
-  height: 36px;
-  text-align:left;
-} */
 .mobile-time-tip-en{
   font-family: NotoSansHans-Regular;
   font-size: 12px;
   color: #333333;
   line-height: 18px;
   text-align:left;
-  /* display: flex; */
-  /* height: 36px; */
 }
 .mobile-inline-div{
   display: inline-block;
