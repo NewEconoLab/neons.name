@@ -87,5 +87,7 @@ function countTime(){
   }
   document.getElementById("_d").innerHTML = d;
   document.getElementById("_h").innerHTML = h;
+  document.getElementById("_ds").innerHTML = d;
+  document.getElementById("_hs").innerHTML = h;
   setTimeout(countTime,1000);
 }
