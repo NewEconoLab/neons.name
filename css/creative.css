@@ -90,6 +90,7 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: #212529;
+  overflow: hidden;
 }
 
 #mainNav {
@@ -216,6 +217,9 @@ header.masthead p {
   header.masthead h1 {
     font-size: 4rem;
   }
+}
+.img-fluid{
+  min-width: 44px;
 }
 
 .service-box {
@@ -456,9 +460,9 @@ header.masthead p {
   background: #DE2A32;
   color:#fff;
   -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 .red-link{
   background: #D0121B;
@@ -487,3 +491,131 @@ header.masthead p {
   display: inline-block;
   vertical-align: top;
 }
+.pc-show{
+  display: block;
+}
+/*移动版*/
+.mobile-show{
+  display: none;
+}
+@media(max-width: 992px){
+  .pc-show{
+    display: none;;
+  }
+  .mobile-show{
+    display: block;;
+  }
+  
+}
+.mobile-time-wrapper{
+  text-align: center;
+  background: url('../img/png/bg2.png') no-repeat;
+  background-position:right;
+  background-size: contain;
+  /* margin-bottom: 100px; */
+  padding-top: 40px;
+}
+.mobile-time-black{
+  margin-bottom: 40px;
+}
+.mobile-time-black span{
+  font-family: NotoSansHans-Medium;
+  font-size: 18px;
+  color: #333333;
+}
+.mobile-time-black .span-en{
+}
+.mobile-time-going{
+  color: #fff;
+  background: rgba(237,16,27,0.5);
+  box-shadow: 0 0 7px 0 #DEAAAC;
+  border-radius: 3px;
+  padding: 20px 0 30px 0;
+}
+.mobile-time-msg{
+  font-family: NotoSansHans-Medium;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  padding-bottom: 20px;
+}
+.mobile-time-msg .span-en{
+}
+.mobile-time-box{
+  font-family: NotoSansHans-Medium;
+  font-size: 64px;
+  color: #FFFFFF;
+}
+.mobile-day-time{
+}
+.mobile-day-time, .mobile-hour-time{
+  display: inline-block;
+  vertical-align: top;
+}
+.mobile-de-time{
+  display: inline-block;
+  vertical-align:top;
+  font-weight: 400;
+  font-family: NotoSansHans-Thin;
+  font-size: 46px;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+.mobile-time-text{
+  font-family: NotoSansHans-DemiLight;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.mobile-btn-wrapper{
+  margin-top: 60px;
+  display: flex;
+}
+.mobile-link-a{
+  flex: 1;
+  border-radius: 100px;
+  font-family: NotoSansHans-DemiLight;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 8px 0;
+  width: 160px;  
+  margin-bottom: 60px;
+}
+.mobile-red-link{
+  background: #D0121B;
+  box-shadow: 0 2px 4px 0 #FFACB0;
+  color: #FFFFFF;
+  margin-right: 25px;
+}
+.mobile-white-link{
+  /* padding: 9px 25px; */
+  border: 1px solid #D0121B;
+  color: #D0121B;
+}
+/* .mobile-time-tip{
+  font-family: NotoSansHans-Regular;
+  font-size: 12px;
+  color: #333333;
+  line-height: 18px;
+  height: 36px;
+  text-align:left;
+} */
+.mobile-time-tip-en{
+  font-family: NotoSansHans-Regular;
+  font-size: 12px;
+  color: #333333;
+  line-height: 18px;
+  text-align:left;
+  /* display: flex; */
+  /* height: 36px; */
+}
+.mobile-inline-div{
+  display: inline-block;
+  vertical-align: top;
+  height: 36px;
+}
+.div-msg{
+  width: 18.95rem;
+}
+/* 添加倒计时样式 end */
