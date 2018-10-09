@@ -65,7 +65,7 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
-  countTime();
+  // countTime();
 })(jQuery); // End of use strict
 
 function countTime(){
