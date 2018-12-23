@@ -1,8 +1,8 @@
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -10,7 +10,7 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -21,7 +21,7 @@
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -68,20 +68,20 @@
   // countTime();
 })(jQuery); // End of use strict
 
-function countTime(){
+function countTime() {
   let date = new Date();
   let now = date.getTime();
-  
+
   let endDate = new Date("2018/10/09 10:00:00");
   let end = endDate.getTime();
 
-  let leftTime = end-now;
+  let leftTime = end - now;
 
-  let d=0,h=0,s=0;
-  if(leftTime>=0){
-    d = Math.floor(leftTime/1000/60/60/24);
-    h = Math.floor(leftTime/1000/60/60%24);
-  }else{
+  let d = 0, h = 0, s = 0;
+  if (leftTime >= 0) {
+    d = Math.floor(leftTime / 1000 / 60 / 60 / 24);
+    h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
+  } else {
     clearTimeout(countTime);
     return false;
   }
@@ -89,5 +89,5 @@ function countTime(){
   document.getElementById("_h").innerHTML = h;
   document.getElementById("_ds").innerHTML = d;
   document.getElementById("_hs").innerHTML = h;
-  setTimeout(countTime,1000);
+  setTimeout(countTime, 1000);
 }
