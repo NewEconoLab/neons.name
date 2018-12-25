@@ -166,7 +166,7 @@ class BonusAlert{
             try {
                 let result = await this.www.getcurrentbonus(addr);
                 
-                console.log(result);
+                // console.log(result);
                 
                 let mybonus = this.claimnum.textContent = parseFloat(result.send) != 0 ? result.send : 0;
                 if(mybonus==0)
@@ -205,10 +205,12 @@ class BonusAlert{
     // 申请领取分红
     async toApplyBonus()
     {
-        let res = await tools.wwwtool.applybonus(this.currentAddress);
+        let res = await this.www.applybonus(this.bonusInput.value);
         if (res.result)
         {
-            this.applyBonusBtn.hidden=true;
+            // this.applyBonusBtn.hidden=true;
+            this.clearMessage();
+            this.claimstate2.hidden=false;
             this.applying.hidden = false;
         } else
         {
