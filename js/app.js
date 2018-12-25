@@ -173,19 +173,23 @@ class BonusAlert{
                 {
                     this.errorClaims.hidden=false;
                 }
-                else if(result.txid !='')
+                else 
                 {
-                    this.claimstate1.hidden = false;
-                    this.applyed.hidden=false;
-                }
-                else if(result.applied)
-                {
-                    this.claimstate2.hidden = false;
-                    this.applying.hidden = false;
-                }else
-                {
-                    this.claimstate0.hidden =false;
-                    this.applyBonusBtn.hidden =false;
+                    this.claimsMessage.hidden=false;
+                    if(result.txid !='')
+                    {
+                        this.claimstate1.hidden = false;
+                        this.applyed.hidden=false;
+                    }
+                    else if(result.applied)
+                    {
+                        this.claimstate2.hidden = false;
+                        this.applying.hidden = false;
+                    }else
+                    {
+                        this.claimstate0.hidden =false;
+                        this.applyBonusBtn.hidden =false;
+                    }
                 }
             } catch (error) {
                 this.errorClaims.hidden = false;
