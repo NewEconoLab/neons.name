@@ -6,8 +6,8 @@ const WWW = class
 {
     constructor()
     {
-        this.api="https://api.nel.group/api/testnet"
-        this.apiaggr = "https://apiwallet.nel.group/api/testnet";
+        this.api="https://api.nel.group/api/mainnet"
+        this.apiaggr = "https://apiwallet.nel.group/api/mainnet";
     }
     makeRpcUrl(url, method, ..._params)
     {
