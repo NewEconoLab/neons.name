@@ -82,6 +82,7 @@ class BonusAlert{
     constructor(modal)
     {        
         this.www = new WWW();
+        this.mybonus = 0;
         this.bonusModal = document.getElementById(modal);
         this.close = document.getElementById("close"+modal);
         this.queryBonusBtn = document.getElementById("query-btn"+modal);
@@ -168,8 +169,8 @@ class BonusAlert{
                 
                 // console.log(result);
                 
-                let mybonus = this.claimnum.textContent = parseFloat(result.send) != 0 ? result.send : 0;
-                if(mybonus==0)
+                this.mybonus = this.claimnum.textContent = parseFloat(result.send) != 0 ? result.send : 0;
+                if(this.mybonus==0)
                 {
                     this.errorClaims.hidden=false;
                 }
@@ -199,7 +200,7 @@ class BonusAlert{
         {
             this.errorAddr.hidden = false;
         }
-        // this.www.getcurrentbonus("")
+        this.www.getcurrentbonus("")
     }
 
     // 申请领取分红
@@ -209,8 +210,13 @@ class BonusAlert{
         if (res.result)
         {
             // this.applyBonusBtn.hidden=true;
-            this.clearMessage();
+            this.clear();
+            // this.applyBonusBtn.hidden=true;
+            // this.claimstate0.hidden=true;
+            // this.claimstate1.hidden=true;
+            this.claimnum.textContent = this.mybonus;
             this.claimstate2.hidden=false;
+            this.claimsMessage.hidden=false;
             this.applying.hidden = false;
         } else
         {
