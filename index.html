@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -52,6 +51,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#tel">联系方式</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" id="ledger-bonus" href="#ledger">Ledger分红</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="index_En.html">
@@ -352,6 +354,90 @@
 
   </section>
 
+  <div class="mobile-show">
+      <div class="alert-wrap" id="_mobile-bonus" hidden>
+        <div class="alert-box">
+            <div class="alert-title" >Ledger分红</div>
+            <div class="alert-content">
+              <div class="alert-input-box">
+                <input type="text" id="input_mobile-bonus">
+                <span id="query-btn_mobile-bonus">
+                  <img src="./img/png/search.png" alt="" srcset="">
+                </span>
+              </div>
+              <div class="alert-line">
+                  <div class="message">
+                      <span id="message-claims_mobile-bonus" hidden> 
+                        <span id="claims-state-0_mobile-bonus">可领取分红：</span>
+                        <span id="claims-state-1_mobile-bonus">已领取分红：</span> 
+                        <span id="claims-state-2_mobile-bonus">待发放分红：</span> 
+                        <a class="claimnum" id="claimnum_mobile-bonus">1</a> CGAS
+                      </span>      
+                      <span id="error-addr_mobile-bonus" class="error" hidden>地址格式错误，请重新确认。</span>
+                      <span id="error-claims_mobile-bonus" class="error" hidden>该地址无可领取分红</span>              
+                  </div>
+              </div>
+              <div class="alert-line">
+                  <div id="apply_mobile-bonus" class="bonus-btn" hidden>申请分红</div>               
+                  <div id="applyed_mobile-bonus" class="disable-btn" hidden>
+                      已发放
+                  </div>              
+                  <div id="applying_mobile-bonus" class="disable-btn" hidden>
+                      待发放
+                  </div>
+              </div>
+            </div>
+            <div class="alert-close" id="close_mobile-bonus">
+                <img src="./img/png/close.png" alt="">
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="pc-show">
+    <div class="alert-wrap" id="_pc-bonus" hidden>
+        <div class="alert-box">
+          <div class="alert-title">Ledger分红</div>
+          <div class="line-wrap">
+            <div class="line-box">
+              <div class="line-content">
+                <input type="text" id="input_pc-bonus">
+                <div>
+                  <div class="line-btn" id="query-btn_pc-bonus">查询</div>
+                </div>
+              </div>
+            </div>
+            <div class="line-box">
+              <div class="line-content">
+                  <div class="message">
+                    <span id="message-claims_pc-bonus" hidden> 
+                      <span id="claims-state-0_pc-bonus">可领取分红：</span>
+                      <span id="claims-state-1_pc-bonus">已领取分红：</span> 
+                      <span id="claims-state-2_pc-bonus">待发放分红：</span> 
+                      <a class="claimnum" id="claimnum_pc-bonus">1</a> CGAS
+                    </span>      
+                    <span id="error-addr_pc-bonus" class="error" hidden>地址格式错误，请重新确认。</span>
+                    <span id="error-claims_pc-bonus" class="error" hidden>该地址无可领取分红</span>      
+                  </div>
+                  <div class="btn-state">
+                      <div id="apply_pc-bonus" class="apply-btn" hidden>申请分红</div>                       
+                      <span id="applyed_pc-bonus" class="state" hidden>
+                          已发放
+                      </span>              
+                      <span id="applying_pc-bonus" class="state" hidden>
+                          待发放
+                      </span>
+                  </div>
+              </div>
+            </div>
+            <div class="alert-close" id="close_pc-bonus" >
+              <img src="./img/png/close.png" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -361,8 +447,17 @@
   <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
+  <!-- Neo ts sdk -->
+    <!-- <script src="./lib/rollup/aes.js"></script>
+    <script src="./lib/component/aes.js"></script>
+    <script src="./lib/component/mode-ecb.js"></script>
+    <script src="./lib/component/pad-nopadding.js"></script>
+    <script src="./lib/scrypt.js"></script>
+    <script src="./lib/neo-ts.js"></script> -->
+
   <!-- Custom scripts for this template -->
   <script src="js/creative.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
 

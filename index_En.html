@@ -56,6 +56,9 @@
             <a class="nav-link js-scroll-trigger" href="#tel">Contact</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" id="ledger-bonus" href="#ledger">FOR LEDGER</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="index.html">
               <img class="img-fluid" src="img/png/ch.png" />
             </a>
@@ -376,6 +379,91 @@
     </div>
 
   </section>
+  
+  <div class="mobile-show">
+      <div class="alert-wrap" id="_mobile-bonus">
+        <div class="alert-box">
+            <div class="alert-title" >FOR LEDGER</div>
+            <div class="alert-content">
+              <div class="alert-input-box">
+                <input type="text" id="input_mobile-bonus">
+                <span id="query-btn_mobile-bonus">
+                  <img src="./img/png/search.png" alt="" srcset="">
+                </span>
+              </div>
+              <div class="alert-line">
+                  <div class="message">
+                      <span id="message-claims_mobile-bonus" hidden> 
+                        <span id="claims-state-0_mobile-bonus">Dividends claimable：</span>
+                        <span id="claims-state-1_mobile-bonus">Dividends distributed：</span> 
+                        <span id="claims-state-2_mobile-bonus">Dividends to be distributed：</span> 
+                        <a class="claimnum" id="claimnum_mobile-bonus">1</a> CGAS
+                      </span>      
+                      <span id="error-addr_mobile-bonus" class="error" hidden>The address format is incorrect. 
+                          Please reconfirm it.</span>
+                      <span id="error-claims_mobile-bonus" class="error" hidden>There is no dividends at this address.</span>              
+                  </div>
+              </div>
+              <div class="alert-line">
+                  <div id="apply_mobile-bonus" class="bonus-btn" hidden>Apply</div>               
+                  <div id="applyed_mobile-bonus" class="disable-btn" hidden>
+                      Distributed
+                  </div>              
+                  <div id="applying_mobile-bonus" class="disable-btn" hidden>
+                      To be distributed
+                  </div>
+              </div>
+            </div>
+            <div class="alert-close" id="close_mobile-bonus">
+                <img src="./img/png/close.png" alt="">
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="pc-show">
+    <div class="alert-wrap" id="_pc-bonus">
+        <div class="alert-box">
+          <div class="alert-title">FOR LEDGER</div>
+          <div class="line-wrap">
+            <div class="line-box">
+              <div class="line-content">
+                <input type="text" id="input_pc-bonus">
+                <div>
+                  <div class="line-btn" id="query-btn_pc-bonus">Query</div>
+                </div>
+              </div>
+            </div>
+            <div class="line-box">
+              <div class="line-content">
+                  <div class="message">
+                    <span id="message-claims_pc-bonus" hidden> 
+                      <span id="claims-state-0_pc-bonus">Dividends claimable：</span>
+                      <span id="claims-state-1_pc-bonus">Dividends distributed：</span> 
+                      <span id="claims-state-2_pc-bonus">Dividends to be distributed：</span> 
+                      <a class="claimnum" id="claimnum_pc-bonus">1</a> CGAS
+                    </span>      
+                    <span id="error-addr_pc-bonus" class="error" hidden>The address format is incorrect. Please reconfirm it. </span>
+                    <span id="error-claims_pc-bonus" class="error" hidden>There is no dividends at this address.</span>      
+                  </div>
+                  <div class="btn-state">
+                      <div id="apply_pc-bonus" class="apply-btn" hidden>Apply</div>                       
+                      <span id="applyed_pc-bonus" class="state" hidden>
+                          Distributed
+                      </span>              
+                      <span id="applying_pc-bonus" class="state" hidden>
+                          To be distributed
+                      </span>
+                  </div>
+              </div>
+            </div>
+            <div class="alert-close" id="close_pc-bonus" >
+              <img src="./img/png/close.png" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -388,6 +476,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
 
